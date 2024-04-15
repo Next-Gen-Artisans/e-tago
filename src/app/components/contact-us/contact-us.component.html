@@ -1,0 +1,76 @@
+<!-- CONTACT US -->
+<!-- Success Modal -->
+<div class="modal fade" id="successModal" tabindex="-1" aria-labelledby="successModalLabel" aria-hidden="true" #successModal>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="successModalLabel">Success</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Thank you for your message!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Failure Modal -->
+<div class="modal fade" id="failureModal" tabindex="-1" aria-labelledby="failureModalLabel" aria-hidden="true" #failureModal>
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="failureModalLabel">Error</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        Failed to submit your message. Please try again.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row contact-us" id="contact-us">
+  <div class="col-12 mb-4 text-center">
+    <img src="assets/images/contact_us.svg" alt="Contact Us Logo" class="img-fluid mb-3" />
+    <h1 class="mb-3">Do you have any questions?</h1>
+    <hr class="my-4" />
+  </div>
+  <div class="col-md-6 col-12 order-md-2">
+    <h3>Connect with us:</h3>
+    <p>
+      For support or any questions: <br />
+      Email us at <b>nextgen.artisans18&#64;gmail.com</b>.
+    </p>
+    <p>
+      <b>University of Makati</b><br />
+      J.P. Rizal Ext., West Rembo,<br />
+      Taguig City, Philippines
+    </p>
+  </div>
+  <div class="col-md-6 col-12 order-md-3">
+    <form #contactForm="ngForm" (ngSubmit)="onSubmit(contactForm)">
+      <label for="inputName" class="form-label">Name</label>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" id="inputName" [(ngModel)]="contactForm.value.name" name="name" required>
+      </div>
+  
+      <label for="inputEmail" class="form-label">Email</label>
+      <div class="input-group mb-3">
+        <input type="email" class="form-control" id="inputEmail" [(ngModel)]="contactForm.value.email" name="email" required>
+      </div>
+  
+      <label for="inputMessage" class="form-label">Message</label>
+      <div class="input-group mb-3">
+        <textarea class="form-control" id="inputMessage" [(ngModel)]="contactForm.value.message" name="message" required></textarea>
+      </div>
+  
+      <input class="btn btn-primary" type="submit" value="Submit">
+    </form>
+  </div>
+</div>

@@ -1,0 +1,77 @@
+.navbar {
+  background: linear-gradient(to bottom, #ffffff 0%, #f0f0f0 100%);
+  color: #231f20;
+  font-family: "Kollektif", sans-serif;
+  font-style: normal;
+  font-size: 1.125rem;
+  padding: 0.5rem 8.125rem;
+  position: sticky;
+  top: 0;
+  z-index: 1020;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid #e0e0e0; /* Adds a slight border for more depth */
+}
+
+/* Custom color for navbar links */
+.navbar-nav .nav-link {
+  color: #231f20; /* Example blue color, change as needed */
+}
+
+/* Custom color for navbar links on hover */
+.navbar-nav .nav-link:hover {
+  color: #ff7f00; /* Color on hover */
+}
+
+/* Buttons */
+.nav-item .btn-primary {
+  background-color: #ff7f00; /* Blue, change as needed */
+  border-color: #ff7f00; /* Border color, change if different from background */
+  /* Other customizations */
+  padding: 8px 20px; /* Increase padding for a bigger button */
+  border-radius: 20px; /* Rounded corners */
+}
+
+/* Change on hover */
+.nav-item .btn-primary:hover {
+  background-color: #0068a5; /* Darker blue on hover */
+  border-color: #0068a5; /* Darker border on hover */
+  color: #fafafa;
+}
+
+/* Centering navbar links in collapsed mode */
+@media (max-width: 480px) {
+  .navbar {
+    padding: 1rem 2rem;
+    position: sticky; /* Add this line to make the navbar sticky */
+    top: 0; /* Aligns the navbar to the top of the viewport */
+    z-index: 1020; /* Ensures the navbar is above other content; adjust as needed */
+  }
+
+  /* Adjusting for Bootstrap's LG breakpoint */
+  .navbar-collapse {
+    justify-content: center; /* Centers the flex items horizontally */
+  }
+
+  /* Adjust spacing and alignment for navbar toggler and brand */
+  .navbar-brand,
+  .navbar-toggler {
+    justify-content: space-between; /* Spreads out the brand and toggler */
+  }
+
+  /* Specific style for the Download button to prevent stretching */
+  .navbar-collapse .btn {
+    display: inline-block; /* Allows the button to occupy only its content width */
+    width: auto; /* Resets any width property */
+  }
+
+  /* Adjust the vertical alignment if necessary */
+  .navbar-collapse .navbar-nav .nav-item {
+    text-align: center; /* Center text for each nav item */
+    flex-basis: 100%; /* Makes each nav item take full width of its container */
+  }
+
+  /* Prevent margin-right from affecting the last item */
+  .navbar-nav .nav-item {
+    margin-right: 0 !important; /* Remove margin on collapsed view */
+  }
+}

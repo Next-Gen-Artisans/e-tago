@@ -1,0 +1,36 @@
+/* You can add global styles to this file, and also import other style files */
+@import url('https://fonts.googleapis.com/css2?family=Holtwood+One+SC&family=Marcellus&family=Racing+Sans+One&display=swap');
+
+@font-face {
+    font-family: 'Kollektif';
+    src: url('./assets/fonts/Kollektif.ttf') format('truetype'); /* for TTF */
+}
+
+@font-face {
+    font-family: 'Kollektif-Bold';
+    src: url('./assets/fonts/Kollektif-Bold.ttf') format('truetype'); /* for TTF */
+    font-weight: bold;
+    font-style: bold;
+}
+
+@font-face {
+    font-family: 'Kollektif-BoldItalic';
+    src: url('./assets/fonts/Kollektif-BoldItalic.ttf') format('truetype'); /* for TTF */
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Kollektif-Italic';
+    src: url('./assets/fonts/Kollektif-Italic.ttf') format('truetype'); /* for TTF */
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'Inlander';
+    src: url('./assets/fonts/Inlanders.ttf'); /* Bold version */
+    font-weight: bolder;
+    font-style: bold;
+}
+

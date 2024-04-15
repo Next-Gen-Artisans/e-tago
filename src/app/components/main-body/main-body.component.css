@@ -1,0 +1,441 @@
+/* BANNER */
+.row.banner {
+  background-color: #173058; /* Change to desired background color */
+  font-family: "Kollektif", sans-serif; /* Change to desired font */
+  color: #ffffff; /* Change to desired font color */
+  padding: 2rem 15rem; /* Padding on the sides of the container */
+  background-image: url("/assets/images/noise.svg");
+  background-repeat: repeat; /* Tile the background image */
+  position: relative; /* Set position context for pseudo-element */
+  overflow: hidden;
+}
+/* Ensure content is on top of the pseudo-element */
+.row.banner > * {
+  position: relative;
+}
+
+/* Custom styles for headings and paragraphs */
+.row.banner h1 {
+  font-family: "Holtwood One SC", serif;
+  font-size: 3.5rem; /* Change to desired font size */
+  font-weight: 400; /* For bold text */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.row.banner em {
+  font-family: "Holtwood One SC", serif;
+  color: #ff7f00;
+  font-size: 3.5rem; /* Change to desired font size */
+  font-weight: 400; /* For bold text */
+  margin-bottom: 1rem; /* Space below the heading */
+}
+
+.row.banner p {
+  font-size: 1.125rem; /* Change to desired font size */
+  margin-bottom: 1.5rem; /* Space below the paragraph */
+  font-family: "Kollektif", sans-serif;
+}
+
+.row.banner b {
+  font-size: 1.125rem; /* Change to desired font size */
+  margin-bottom: 1.5rem; /* Space below the paragraph */
+  font-family: "Kollektif", sans-serif;
+  color: #ff7f00;
+}
+
+/* Aligning text to the middle of the container (vertically) */
+.row.banner {
+  align-items: center; /* Vertically centers the content of the row */
+  justify-content: center; /* Horizontally centers the content if needed */
+}
+
+/* Custom styles for button */
+.row.banner .btn-primary {
+  background-color: #ff7f00; /* Blue, change as needed */
+  border-color: #ff7f00; /* Border color, change if different from background */
+  padding: 10px 50px;
+}
+
+/* Hover effect for button */
+.row.banner .btn-primary:hover {
+  background-color: #0068a5; /* Darker shade for hover state */
+  border-color: #ffffff; /* Border color for hover state */
+}
+
+/* Style for the banner logo */
+.row.banner .col-5 img {
+  align-self: center;
+  max-width: 100%; /* Makes the image responsive */
+  width: auto; /* Width is auto to maintain aspect ratio */
+  height: auto; /* Height is auto to maintain aspect ratio */
+}
+
+/* FEATURES */
+.row.features {
+  margin: 100px 0; /* Space above and below the features section */
+  background-color: #ffffff; /* Change to desired background color */
+  font-family: "Kollektif", sans-serif; /* Change to desired font */
+  color: #231f20; /* Change to desired font color */
+  padding: 0 2rem; /* Padding on the sides of the container */
+  background-repeat: repeat; /* Tile the background image */
+  position: relative; /* Set position context for pseudo-element */
+}
+
+.row.features h2 {
+  font-family: "Holtwood One SC", serif;
+  font-size: 3rem; /* Change to desired font size */
+  font-weight: bold; /* For bold text */
+  color: #ff7f00;
+}
+
+.row.features .row.text-center {
+  font-size: 1.5rem; /* Change to desired font size */
+  margin-top: 1.5rem; /* Space below the paragraph */
+  padding: 0 18rem;
+  font-family: "Kollektif", sans-serif;
+}
+
+/* Divider */
+.custom-hr {
+  color: #231f20;
+  width: 25%;
+  margin: 0 auto; /* Shorthand to set both left and right margins to auto */
+}
+
+/* Individual Features */
+.row.features .row.feature {
+  margin-top: 5rem;
+}
+
+.row.features .row.feature h5 {
+  padding-top: 10rem;
+  font-weight: bold;
+}
+
+/* Custom styles for card */
+.card-custom {
+  margin-top: 30px; /* Space from the top of the column for the image to fit into */
+  height: 100%;
+  border-radius: 20px;
+}
+
+.card-custom .card-body {
+  position: relative; /* Set .card-body to be relative for absolute positioning of children */
+  padding-top: 20px; /* Adjust this padding-top to be at least the height of the half image to prevent overlaying content */
+}
+
+.card-img-top-custom {
+  width: 70%; /* Set a fixed width for your image */
+  height: auto; /* Maintain the aspect ratio */
+  position: absolute;
+  top: -80px; /* Half of the image's height to pull it out of the card */
+  left: 50%; /* Start at the exact center of the card */
+  transform: translateX(
+    -50%
+  ); /* Shift the image back by half its width to center it */
+  z-index: 10; /* Ensure the image is above other content */
+}
+
+.card-custom .card-body {
+  position: relative; /* Set .card-body to be relative for absolute positioning of children */
+  padding-top: 20px; /* Adjust this padding-top to be at least the height of the half image to prevent overlaying content */
+}
+
+.card-img-top-custom {
+  width: 70%; /* Set a fixed width for your image */
+  height: auto; /* Maintain the aspect ratio */
+  position: absolute;
+  top: -80px; /* Half of the image's height to pull it out of the card */
+  left: 50%; /* Start at the exact center of the card */
+  transform: translateX(
+    -50%
+  ); /* Shift the image back by half its width to center it */
+  z-index: 10; /* Ensure the image is above other content */
+}
+
+/* WHY CHOOSE E-TAGO */
+.row.why-etago {
+  font-family: "Kollektif", sans-serif; /* Change to desired font */
+  color: #363636; /* Change to desired font color */
+  padding: 2rem 15rem; /* Padding on the sides of the container */
+}
+
+.row.why-etago .row.text-center {
+  font-size: 1.5rem; /* Change to desired font size */
+  margin-top: 1.5rem; /* Space below the paragraph */
+  padding: 0 18rem;
+  font-family: "Kollektif", sans-serif;
+}
+
+.row.why-etago h2 {
+  font-family: "Holtwood One SC", serif;
+  font-size: 3rem; /* Change to desired font size */
+  font-weight: bold; /* For bold text */
+  color: #ff7f00;
+}
+
+.row.why-etago .row p {
+  font-size: 1.5rem; /* Change to desired font size */
+  font-weight: normal; /* For bold text */
+  color: #231f20;
+}
+
+/* Additional floating images if needed */
+.floating-img1 {
+  position: absolute;
+  top: 145%; /* Adjust based on actual placement */
+  left: -2%; /* Adjust based on actual placement */
+  width: 20rem; /* Adjust based on actual size */
+  height: auto; /* Keep aspect ratio */
+  z-index: 0; /* Above the background, below the content */
+}
+
+/* Additional floating images if needed */
+.floating-img2 {
+  position: absolute;
+  top: 225%; /* Adjust based on actual placement */
+  right: 0%; /* Adjust based on actual placement */
+  width: 20rem; /* Adjust based on actual size */
+  height: auto; /* Keep aspect ratio */
+  z-index: 0; /* Above the background, below the content */
+}
+
+.floating-img3 {
+  position: absolute;
+  top: 300%; /* Adjust based on actual placement */
+  left: -5%; /* Adjust based on actual placement */
+  width: 20rem; /* Adjust based on actual size */
+  height: auto; /* Keep aspect ratio */
+  z-index: 0; /* Above the background, below the content */
+}
+
+/* FAQs */
+.row.faqs {
+  font-family: "Kollektif", sans-serif; /* Change to desired font */
+  color: #363636; /* Change to desired font color */
+  padding: 13rem 18rem; /* Padding on the sides of the container */
+}
+
+.row.faqs .row.text-center {
+  font-size: 1.5rem; /* Change to desired font size */
+  margin-top: 1.5rem; /* Space below the paragraph */
+  padding: 0 18rem;
+}
+
+.row.faqs p {
+  font-family: "Kollektif", sans-serif;
+  font-weight: bold; /* For bold text */
+  color: #ff7f00;
+}
+
+.row.faqs h1 {
+  font-family: "Holtwood One SC", serif;
+  font-size: 3rem; /* Change to desired font size */
+  font-weight: bold; /* For bold text */
+  color: #231f20;
+}
+
+.row.faqs .accordion-button {
+  font-family: "Kollektif", sans-serif;
+  font-size: 1.5rem; /* Change to desired font size */
+  font-weight: bold; /* For bold text */
+  color: #231f20;
+}
+
+.row.faqs .accordion-body {
+  font-family: "Kollektif", sans-serif;
+  font-size: 1.25rem; /* Change to desired font size */
+  font-weight: normal; /* For bold text */
+  color: #231f20;
+}
+
+.row.faqs .accordion-item {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.row.faqs .accordion-item:not(:last-of-type) {
+  margin-bottom: 1rem; /* Space between accordion items */
+}
+
+/* Optional: If you want the shadow to appear on hover */
+.row.faqs .accordion-item:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
+
+/* Ensure the accordion flush doesn’t have borders or backgrounds on the buttons */
+.row.faqs .accordion-button {
+  border: none;
+  background-color: transparent;
+}
+
+
+@media (max-width: 480px) {
+  /* BANNER STYLES FOR TABLETS AND UP */
+  .row.banner {
+    padding: 3.75rem 2rem; /* Larger side padding for larger screens */
+  }
+  .row.banner h1 {
+    font-size: 3rem; /* Larger font size for larger screens */
+  }
+  .row.banner em {
+    font-size: 3rem; /* Larger font size for larger screens */
+  }
+
+  .row.banner p,
+  .row.banner b {
+    font-size: 1.125rem; /* Slightly larger font size for larger screens */
+  }
+  /* Custom styles for button */
+  .row.banner .btn-primary {
+    font-size: 1.125rem;
+  }
+
+  .row.banner .col-md-5 img {
+    max-width: 100%; /* Full width for larger screens */
+  }
+
+  /* FEATURES STYLES FOR TABLETS AND UP */
+  .row.features {
+    padding: 3.75rem 2rem; /* Reduce side padding for smaller screens */
+    margin: 0;
+    height: 100%;
+  }
+
+  .row.features h2 {
+    font-size: 3rem; /* Smaller font size for smaller screens */
+  }
+
+  .row.features .row.text-center {
+    padding: 0; /* Reduce padding for text description */
+    margin: 0;
+    font-size: 1.125rem; /* Smaller text for description */
+  }
+
+  .row.features .row.feature {
+    margin-top: 2rem; /* Less space between features */
+  }
+
+  .row.features .row.feature h5 {
+    padding-top: 4rem; /* Less padding as image is smaller */
+    font-size: 1.25rem; /* Adjust font size for feature titles */
+  }
+
+  .card-img-top-custom {
+    top: -60px; /* Less negative top as images are smaller */
+    width: 50%; /* Smaller images */
+  }
+
+  .card-custom {
+    height: 250px;
+    margin-bottom: 4rem;
+  }
+
+  /* Adjust card custom styles for smaller screens */
+  .card-custom .card-body {
+    padding-top: 20px; /* Less padding on top */
+  }
+
+  .floating-img1 {
+    position: absolute;
+    top: 140%; /* Adjust based on actual placement */
+    left: -2%; /* Adjust based on actual placement */
+    width: 7rem; /* Adjust based on actual size */
+    height: auto; /* Keep aspect ratio */
+    z-index: 0; /* Above the background, below the content */
+  }
+  .floating-img2 {
+    position: absolute;
+    top: 255%; /* Adjust based on actual placement */
+    right: 0%; /* Adjust based on actual placement */
+    width: 8rem; /* Adjust based on actual size */
+    height: auto; /* Keep aspect ratio */
+    z-index: 0; /* Above the background, below the content */
+    overflow: hidden;
+  }
+
+  .floating-img3 {
+    position: absolute;
+    top: 530%; /* Adjust based on actual placement */
+    left: -5%; /* Adjust based on actual placement */
+    width: 8rem; /* Adjust based on actual size */
+    height: auto; /* Keep aspect ratio */
+    z-index: 0; /* Above the background, below the content */
+  }
+
+  /* WHY CHOOSE E-TAGO STYLES FOR TABLETS AND UP */
+  .row.why-etago {
+    padding: 3.75rem 2rem; /* Appropriate side padding for mobile screens */
+    margin: 0; /* Ensure no external margins affect the layout */
+  }
+
+  .row.why-etago h2 {
+    font-size: 2.25rem; /* Suitable font size for mobile views */
+    margin-bottom: 1rem; /* Space below heading for clarity */
+  }
+
+  .row.why-etago .row.text-center,
+  .row.why-etago .row p {
+    padding: 0; /* Remove padding for text containers */
+    font-size: 1.125rem; /* Standard font size for descriptions */
+    text-align: center; /* Central alignment for text */
+    margin-bottom: 1rem; /* Consistent bottom margin for separation */
+  }
+
+  .row.why-etago .align-items-center,
+  .row.why-etago .col-md-8,
+  .row.why-etago .col-4 {
+    flex-direction: column; /* Stack elements vertically */
+    width: 100%; /* Use full width for all column content */
+  }
+
+  .row.why-etago img {
+    margin-bottom: 1rem; /* Add a margin below images for spacing */
+  }
+
+  .row.why-etago .custom-hr {
+    width: 50%; /* Adjust HR width for mobile screens */
+  }
+
+  /* FAQS STYLES FOR TABLETS AND UP */
+
+  .row.faqs {
+    padding: 5rem 2rem; /* Reduce side padding for smaller screens */
+  }
+
+  .row.faqs h1 {
+    font-size: 2rem; /* Smaller font size for smaller screens */
+  }
+
+  .row.faqs .row.text-center {
+    padding: 0; /* Reduce padding for text description */
+    margin: 0;
+    font-size: 1.125rem; /* Smaller text for description */
+  }
+
+  .row.faqs p {
+    font-size: 1.125rem; /* Smaller font size for smaller screens */
+  }
+
+  .row.faqs .accordion-button {
+    font-size: 1.125rem; /* Smaller font size for smaller screens */
+  }
+
+  .row.faqs .accordion-body {
+    font-size: 1rem; /* Smaller font size for smaller screens */
+  }
+
+  .row.faqs .accordion-item {
+    margin-bottom: 1rem; /* Space between accordion items */
+  }
+
+  /* Optional: If you want the shadow to appear on hover */
+  .row.faqs .accordion-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+
+  /* Ensure the accordion flush doesn’t have borders or backgrounds on the buttons */
+  .row.faqs .accordion-button {
+    border: none;
+    background-color: transparent;
+  }
+}

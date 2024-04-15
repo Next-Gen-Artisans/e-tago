@@ -1,0 +1,60 @@
+footer {
+  background-color: #173058; /* Change to desired background color */
+  font-family: "Kollektif", sans-serif; /* Change to desired font */
+  color: #ffffff; /* Change to desired font color */
+  padding: 2rem 15rem; /* Padding on the sides of the container */
+  background-image: url("/assets/images/noise.svg");
+  background-repeat: repeat; /* Tile the background image */
+  position: relative; /* Set position context for pseudo-element */
+}
+
+/* Change the color of list items */
+.footer-link {
+  color: #ffffff; /* Replace with your desired color */
+}
+
+/* Change the color on hover and add underline */
+.footer-link:hover {
+  color: #FF7F00; /* Replace with your desired hover color */
+  text-decoration: underline; /* Adds underline on hover */
+}
+
+.contact-us h1, .contact-us h3, .contact-us p, .contact-us label {
+  text-align: center; /* Ensure all text is centered */
+}
+
+.contact-us hr {
+  color: #FF7F00;
+  width: 50%; /* Adjust width as needed */
+  margin: 2rem auto; /* Center horizontally and add vertical spacing */
+}
+
+/* Responsive Styles */
+@media (max-width: 480px) {
+
+  footer{
+    padding: 2rem 1rem; /* Adjust padding for smaller screens */
+  }
+  .contact-us h1 {
+    font-size: 1.75rem; /* Reduce font size for mobile screens */
+  }
+
+  .contact-us h3 {
+    font-size: 1.5rem; /* Reduce font size for mobile screens */
+  }
+
+  .contact-us p, .contact-us label {
+    font-size: 1rem; /* Smaller font size for readability */
+  }
+
+  .contact-us hr {
+    width: 80%; /* Wider HR for better mobile visibility */
+  }
+
+  .col-md-6 {
+    order: 0; /* Ensure content order is consistent for mobile */
+  }
+}
+
+
+
